@@ -20,7 +20,7 @@ addTaskBtn.addEventListener("click",()=>{
 
     tasks.push(newTask);
     savetasks();
-    RenderTask(newTask);
+    RenderTask(newTask)
     todoInput.value = "";
     console.log(tasks)
 })
