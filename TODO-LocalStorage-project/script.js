@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 //create Array
 let tasks = JSON.parse(localStorage.getItem('tasks')) || []
 
-tasks.forEach((tasks) => RenderTask(task));
+tasks.forEach((task) => RenderTask(task));
 
 addTaskBtn.addEventListener("click",()=>{
     const TaskText = todoInput.value.trim()
@@ -26,7 +26,7 @@ addTaskBtn.addEventListener("click",()=>{
 
 //RenderTask
 function RenderTask(task){
-    console.log(tasks)
+    console.log(task.text)
 }
 
 //SaveTask
